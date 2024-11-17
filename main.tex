@@ -1,0 +1,278 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING FORMAT 1----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+%----------HEADING FORMAT 2----------
+
+\begin{center}
+    {\Huge \scshape Avijeet Jain} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-9724442465 ~ 
+    \textcolor{OliveGreen}{\href{mailto:jainavijeet@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{jainavijeet@gmail.com}}} ~ 
+    \textcolor{OliveGreen}{\href{https://www.linkedin.com/in/avijeetjain/}{\raisebox{-0.2\height}\faLinkedin\ \underline{AvijeetJain}}}  ~
+    \textcolor{OliveGreen}{\href{https://github.com/AvijeetJain}{\raisebox{-0.2\height}\faGithub\ \underline{AvijeetJain}}}  ~
+    \textcolor{OliveGreen}{\href{https://portfolio-website-isgr.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology, Gwalior}{Dec 2021 -- May 2025}
+      {Bachelors in Information Technology}{Madhya Pradesh, India}
+
+    \resumeSubheading
+      {Delhi Public School, Ahmedabad}{Apr 2020 -- May 2021}
+      {CBSE Class XII Boards, Percentage - 95\%}{Ahmedabad, India}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Development Engineer Intern}{May 2024 -- Jul 2024}
+      {Koinx $|$ \textcolor{OliveGreen}{\href{https://www.koinx.com/in}{Homepage}}}{Bhubaneswar, India}
+      \resumeItemListStart
+        \resumeItem{Contributed to building a scalable and modular frontend architecture for a crypto tax calculation platform.}
+        \resumeItem{Enhanced user engagement by integrating BlurHash for image placeholders, leading to a 25\% decrease in loading times.}
+        \resumeItem{Optimized web performance by implementing new-generation image formats (WebP, AVIF), resulting in a 30\% reduction in image load times.}
+      \resumeItemListEnd 
+  
+      % \resumeSubheading
+      % {Frontend Developer Intern}{Aug 2023 -- Oct 2023}
+      % {Abhigyan Abhikaushalam Students’ Forum $|$ \textcolor{OliveGreen}{\href{https://www.aasf.in/}{Homepage}}}{Gwalior, India}
+      % \resumeItemListStart
+      %   \resumeItem{Led the development of a ReactJS-based website for IIIT Gwalior’s techno-managerial student forum, optimizing frontend performance, leading to a notable 30\% surge in user engagement and improved interactivity.}
+      %   \resumeItem{Executed the development of a website for the institute’s annual magazine launch, employing HTML, CSS, and JavaScript technologies, resulting in a 25\% boost in engagement and user interaction.}
+      %   \resumeItem{Collaborated with a cross-functional team to orchestrate the development of an integrated online platform.}
+      % \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+          {\textbf{\textcolor{OliveGreen}
+          {\href{https://github.com/AvijeetJain/Echo.git}
+          {Echo - A P2P File Sharing Application}}} $|$ 
+          \emph{Python, Sockets, Multithreading}}{Dec 2023 -- Jan 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a lightweight peer-to-peer intranet file-sharing and messaging CLI based application inspired by DC++.}
+            \resumeItem{Incorporated 10+ features like searching for files across the network, downloading and requesting files, file integrity checks for messages, last seen and online/offline status of peers.}
+            \resumeItem{Designed a resilient peer-to-peer architecture with TCP for swift and reliable communication and file transfers. Employed multithreading to achieve simultaneous messaging, resulting in a 99\%+ success rate for seamless data exchange.}
+            \resumeItem{Constructing a user-friendly GUI using PyQt, incorporating over 10 features for enhanced user experience.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+    
+      \resumeProjectHeading
+          {\textbf{\textcolor{OliveGreen}
+          {\href{https://github.com/AvijeetJain/PassMan}
+          {PassMan - A Cryptographically Secured Password Manager}}} $|$ \emph{ReactJS, ExpressJS}}{Oct 2023 -- Nov 2023}
+          \resumeItemListStart
+            \resumeItem{Engineered PassMan, a robust password management solution, employing RSA cryptography for a remarkable 99.9\% encryption accuracy, ensuring secure storage and retrieval of sensitive credentials.}
+            \resumeItem{Crafted a high-performance backend server using NodeJS and ExpressJS, adeptly managing a substantial load of HTTP requests with Axios, culminating in a 20\% reduction in response time, optimizing system throughput.}
+            \resumeItem{Strengthened security measures by integrating JWT tokens and spearheaded the implementation of 5+ key features, including encrypted password storage and efficient editing and deletion functionalities.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{\textcolor{OliveGreen}
+          {\href{https://github.com/AvijeetJain/pixelDust}
+          {PixelDust - An Image Encryption Tool}}} $|$ 
+          \emph{NodeJs, JavaScript, Encryption}}{Jan 2023 -- Feb 2023}
+          \resumeItemListStart
+            \resumeItem{Architected a lightweight command line tool for image encryption and decryption using advanced
+            cryptographic techniques, which take less than 1 sec to encrypt or decrypt an image.}
+            \resumeItem{Revamped the decryption process for encrypted images, ensuring 99\% accuracy in restoring them to their original state with the correct key.}
+            \resumeItem{Optimized compatibility for various image formats, while 99\% accurate for PNG images, the tool also supports JPG and JPEG images, keeping in mind the slight pixel variations due to their lossy compression nature.}            
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%---------PROGRAMMING SKILLS---------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages: }{JavaScript, C/C++, Python} \\
+     \textbf{Frameworks \& Libraries: }{ReactJS, NodeJS, ExpressJS, Redux Toolkit, Sockets, Selenium, BeautifulSoup} \\
+     \textbf{Databases: }{MySQL, MongoDB} \\
+     \textbf{Other Technologies: }{Git, GitHub, Rest API} \\
+     \textbf{Relevant Coursework: }{Operating Systems, OOPs, Database Management, Computer Networks} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT--------------
+\section{Achievements}
+    \resumeSubHeadingListStart
+            \resumeItemListStart
+                \resumeItem{Ranked amongst the top 1.08\% (532 / 37816) in the Leetcode Biweekly 133 Contest.}
+                \resumeItem{Led a workshop teaching 100+ students essential skills in Git and GitHub technologies.}
+                \resumeItem{Secured 1st position out of 100+ participants in JPC - A coding contest by IIIT Gwalior's Techno-Managerial Forum.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    
+\section{Positions of Responsibility}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+          {Chapter Lead}{}
+          {Google Developer Student Clubs $|$ \textcolor{OliveGreen}{\href{https://gdsc.community.dev/atal-bihari-vajpayee-indian-institute-of-information-technology-and-management-abv-iiitm-gwalior}{Homepage}}}{}
+          \resumeItemListStart
+            \resumeItem{Managed 10+ technical events including Google I/O Extended within the institute.}
+          \resumeItemListEnd 
+
+        \resumeSubheading
+          {Web Admin \& Event Head}{}
+          {Abhigyan Abhikaushalam Students Forum $|$ \textcolor{OliveGreen}{\href{https://www.aasf.in/}{Homepage}}}{}
+          \resumeItemListStart
+            \resumeItem{Executed 40+ techno-managerial events as well as played a key role in development of its website.}
+          \resumeItemListEnd         
+    \resumeSubHeadingListEnd
+
+\end{document}
